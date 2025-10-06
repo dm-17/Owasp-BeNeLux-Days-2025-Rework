@@ -1,8 +1,10 @@
 function toggle_faq(id) {
     for (let step = 0; step < 5; step ++ ) {
-        let element = "faq-ans"+step
-        x = document.getElementById(element);
-        x.style.display = "none";
+        if ( id != step ) {
+            let loopelement = "faq-ans"+step
+            x = document.getElementById(loopelement);
+            x.style.display = "none";
+        }
     }
     let element = "faq-ans"+id
     var x = document.getElementById(element);

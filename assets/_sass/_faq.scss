@@ -71,6 +71,7 @@
     align-items: center;
     justify-content: center;
     font-family: inter;
+    aspect-ratio: 1/1;
     cursor:pointer
 }
 
@@ -98,11 +99,11 @@
     display: none;
 }
 
-// .faq .section .left .faq-single .r-icon:hover  {
-//     background-color: #8d4e4e !important;
-//     rotate: 45deg;
-//     transition-duration:.3s
-// }
+.faq .section .left .faq-single .r-icon:hover  {
+    background-color: #8d4e4e !important;
+    rotate: 45deg;
+    transition-duration:.3s
+}
 
 // Added for HTML5 -- end
 

@@ -286,11 +286,13 @@ body { padding: 0; margin: 0; }
 
 .faq .section .left .faq-single { display: flex; height: fit-content; font-size: 20px; font-family: inter; justify-content: space-between; align-items: center; gap: 20px; padding: 10px 20px; box-shadow: 0 10px 10px #ccc; }
 
-.faq .section .left .faq-single .r-icon { padding: 10px; border-radius: 50%; width: 20px; max-width: 20px; height: 20px; background-color: #93baa5; color: #fff; font-size: 20px; display: flex; align-items: center; justify-content: center; font-family: inter; cursor: pointer; }
+.faq .section .left .faq-single .r-icon { padding: 10px; border-radius: 50%; width: 20px; max-width: 20px; height: 20px; background-color: #93baa5; color: #fff; font-size: 20px; display: flex; align-items: center; justify-content: center; font-family: inter; aspect-ratio: 1/1; cursor: pointer; }
 
 .faq .section .left .faq-single .r-icon:hover { filter: brightness(0.9); }
 
 .faq-ans { font-family: inter; font-size: 16px; display: none; }
+
+.faq .section .left .faq-single .r-icon:hover { background-color: #8d4e4e !important; rotate: 45deg; transition-duration: 0.3s; }
 
 .faq .section .left .faq-single .l-icon { display: none; font-family: inter; font-size: 30px; color: #93baa5; }
 
