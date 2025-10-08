@@ -22,7 +22,7 @@
   <meta name="msapplication-TileColor" content="#0079a7">
   <meta name="theme-color" content="#ffffff">
 
-  <link type="text/css" rel="stylesheet" href="/assets/css/style.css?_=1759862596">
+  <link type="text/css" rel="stylesheet" href="/assets/css/style.css?_=1759956406">
   <title>Sponsors FAQ</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -38,8 +38,8 @@
 <body>
     <div class="home">
         <!-- Navigation section -->
-<div class="nav-bar">
-    <a href="#/" data-discover="true">
+<div class="nav-bar nav-bar-open" id="burger">
+    <a href="/" data-discover="true">
         <div class="left-icon"></div>
     </a>
     <div class="right-links">
@@ -105,7 +105,11 @@
       
     
     </div>
-    <div class="navigation-opener"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="nav-opiner" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM142.4 642.1L298.7 519a8.84 8.84 0 0 0 0-13.9L142.4 381.9c-5.8-4.6-14.4-.5-14.4 6.9v246.3a8.9 8.9 0 0 0 14.4 7z"></path></svg></div>
+    <div class="navigation-opener">
+      <a href="javascript:void(0);" onclick="burgerToggle()"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="nav-opiner" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM142.4 642.1L298.7 519a8.84 8.84 0 0 0 0-13.9L142.4 381.9c-5.8-4.6-14.4-.5-14.4 6.9v246.3a8.9 8.9 0 0 0 14.4 7z"></path>
+      </svg></a>
+    </div>
 </div>
 
         <div class="sponsors-page">
@@ -124,91 +128,91 @@
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>What will be the dimensions of the booth?<div class="r-icon" onclick="toggle_faq(0)">+</div>
+                            <div class="l-icon">+</div>What will be the dimensions of the booth?<div class="r-icon" onclick="toggle_sponsor_faq(0)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans0">Depending on your Sponsorship package you will be provided with tables of approximate dimensions of either 1mx1m or 2mx2m with two chairs and a power outlet in the area designated to you.</div>
+                    <div class="faq-ans" id="faq-ans0" style="display: none;">Depending on your Sponsorship package you will be provided with tables of approximate dimensions of either 1mx1m or 2mx2m with two chairs and a power outlet in the area designated to you.</div>
                     
                     
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>What will be the dimensions of the Banner roll up?<div class="r-icon" onclick="toggle_faq(1)">+</div>
+                            <div class="l-icon">+</div>What will be the dimensions of the Banner roll up?<div class="r-icon" onclick="toggle_sponsor_faq(1)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans1">The sponsor has to provide their own banner where a Gold Sponsor can place regular 1x2 banners and platinum sponsors can place larger banners.</div>
+                    <div class="faq-ans" id="faq-ans1" style="display: none;">The sponsor has to provide their own banner where a Gold Sponsor can place regular 1x2 banners and platinum sponsors can place larger banners.</div>
                     
                     
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>Will there be electricity provided or do we have to pay for it?<div class="r-icon" onclick="toggle_faq(2)">+</div>
+                            <div class="l-icon">+</div>Will there be electricity provided or do we have to pay for it?<div class="r-icon" onclick="toggle_sponsor_faq(2)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans2">Electricity will be provided.</div>
+                    <div class="faq-ans" id="faq-ans2" style="display: none;">Electricity will be provided.</div>
                     
                     
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>Do we have Wifi available at the event and do we have to pay for it?<div class="r-icon" onclick="toggle_faq(3)">+</div>
+                            <div class="l-icon">+</div>Do we have Wifi available at the event and do we have to pay for it?<div class="r-icon" onclick="toggle_sponsor_faq(3)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans3">Wifi will be provided for free at the venue.</div>
+                    <div class="faq-ans" id="faq-ans3" style="display: none;">Wifi will be provided for free at the venue.</div>
                     
                     
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>Do we get screens and equipment?<div class="r-icon" onclick="toggle_faq(4)">+</div>
+                            <div class="l-icon">+</div>Do we get screens and equipment?<div class="r-icon" onclick="toggle_sponsor_faq(4)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans4">OWASP doesn’t provide any screens or equipment. It is the sole responsibility of the sponsor to arrange and vacate it at the end of the event. Please reach out to one of the volunteers in time to see if we can help you.</div>
+                    <div class="faq-ans" id="faq-ans4" style="display: none;">OWASP doesn’t provide any screens or equipment. It is the sole responsibility of the sponsor to arrange and vacate it at the end of the event. Please reach out to one of the volunteers in time to see if we can help you.</div>
                     
                     
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>Do we get to choose the location of the booth?<div class="r-icon" onclick="toggle_faq(5)">+</div>
+                            <div class="l-icon">+</div>Do we get to choose the location of the booth?<div class="r-icon" onclick="toggle_sponsor_faq(5)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans5">No, this is done by the organizers team depending on parameters like space and first come first serve.</div>
+                    <div class="faq-ans" id="faq-ans5" style="display: none;">No, this is done by the organizers team depending on parameters like space and first come first serve.</div>
                     
                     
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>Do you provide any kind of lead collection mechanism?<div class="r-icon" onclick="toggle_faq(6)">+</div>
+                            <div class="l-icon">+</div>Do you provide any kind of lead collection mechanism?<div class="r-icon" onclick="toggle_sponsor_faq(6)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans6">We do not provide any kind of lead collection mechanism. You are free to collect information from the people you talk to or the ones who come to your booth with their consent.</div>
+                    <div class="faq-ans" id="faq-ans6" style="display: none;">We do not provide any kind of lead collection mechanism. You are free to collect information from the people you talk to or the ones who come to your booth with their consent.</div>
                     
                     
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>Do you provide any kind of information with respect to the attendees post conference?<div class="r-icon" onclick="toggle_faq(7)">+</div>
+                            <div class="l-icon">+</div>Do you provide any kind of information with respect to the attendees post conference?<div class="r-icon" onclick="toggle_sponsor_faq(7)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans7">We do not share any kind of information on the attendees post event. You are free to collect information from the people you talk to or the ones who come to your booth with their consent.</div>
+                    <div class="faq-ans" id="faq-ans7" style="display: none;">We do not share any kind of information on the attendees post event. You are free to collect information from the people you talk to or the ones who come to your booth with their consent.</div>
                     
                     
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>Do you have the floor plan for the venue?<div class="r-icon" onclick="toggle_faq(8)">+</div>
+                            <div class="l-icon">+</div>Do you have the floor plan for the venue?<div class="r-icon" onclick="toggle_sponsor_faq(8)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans8">Please ask the OWASP member you are in touch with for more details on this.</div>
+                    <div class="faq-ans" id="faq-ans8" style="display: none;">Please ask the OWASP member you are in touch with for more details on this.</div>
                     
                     
                 
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>How many people will be attending?<div class="r-icon" onclick="toggle_faq(9)">+</div>
+                            <div class="l-icon">+</div>How many people will be attending?<div class="r-icon" onclick="toggle_sponsor_faq(9)">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans9">We are expecting from 200 to 300 people attending this event.</div>
+                    <div class="faq-ans" id="faq-ans9" style="display: none;">We are expecting from 200 to 300 people attending this event.</div>
                     
                     
                         
@@ -406,22 +410,32 @@
   </div>
 </div>
 <div class="links-ar">
-  <div class="title">FOLLOW US</div>
+  <div class="title">
+    FOLLOW US
+  </div>
   <div class="links-icon">
+    <div class="links-country">Belgium //</div>
     <div class="icon-link">
       <a href="https://www.linkedin.com/company/owasp-belgium/" target="_blank" ><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-  <path d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 1 0-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"></path>
-</svg></a>// Belgium
-    </div>
-    <div class="icon-link">
-      <a href="https://nl.linkedin.com/company/owasp-netherlands" target="_blank" ><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-  <path d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 1 0-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"></path>
-</svg></a>// Netherlands
+      <path d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 1 0-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"></path>
+      </svg></a>
     </div>
     <div class="icon-link">
       <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-  <path d="M409.4 128c-42.4 0-76.7 34.4-76.7 76.8 0 20.3 8.1 39.9 22.4 54.3 14.4 14.4 33.9 22.5 54.3 22.5h76.7v-76.8c0-42.3-34.3-76.7-76.7-76.8zm0 204.8H204.7c-42.4 0-76.7 34.4-76.7 76.8s34.4 76.8 76.7 76.8h204.6c42.4 0 76.7-34.4 76.7-76.8.1-42.4-34.3-76.8-76.6-76.8zM614 486.4c42.4 0 76.8-34.4 76.7-76.8V204.8c0-42.4-34.3-76.8-76.7-76.8-42.4 0-76.7 34.4-76.7 76.8v204.8c0 42.5 34.3 76.8 76.7 76.8zm281.4-76.8c0-42.4-34.4-76.8-76.7-76.8S742 367.2 742 409.6v76.8h76.7c42.3 0 76.7-34.4 76.7-76.8zm-76.8 128H614c-42.4 0-76.7 34.4-76.7 76.8 0 20.3 8.1 39.9 22.4 54.3 14.4 14.4 33.9 22.5 54.3 22.5h204.6c42.4 0 76.7-34.4 76.7-76.8.1-42.4-34.3-76.7-76.7-76.8zM614 742.4h-76.7v76.8c0 42.4 34.4 76.8 76.7 76.8 42.4 0 76.8-34.4 76.7-76.8.1-42.4-34.3-76.7-76.7-76.8zM409.4 537.6c-42.4 0-76.7 34.4-76.7 76.8v204.8c0 42.4 34.4 76.8 76.7 76.8 42.4 0 76.8-34.4 76.7-76.8V614.4c0-20.3-8.1-39.9-22.4-54.3-14.4-14.4-34-22.5-54.3-22.5zM128 614.4c0 20.3 8.1 39.9 22.4 54.3 14.4 14.4 33.9 22.5 54.3 22.5 42.4 0 76.8-34.4 76.7-76.8v-76.8h-76.7c-42.3 0-76.7 34.4-76.7 76.8z"></path>
-</svg>
+      <path d="M409.4 128c-42.4 0-76.7 34.4-76.7 76.8 0 20.3 8.1 39.9 22.4 54.3 14.4 14.4 33.9 22.5 54.3 22.5h76.7v-76.8c0-42.3-34.3-76.7-76.7-76.8zm0 204.8H204.7c-42.4 0-76.7 34.4-76.7 76.8s34.4 76.8 76.7 76.8h204.6c42.4 0 76.7-34.4 76.7-76.8.1-42.4-34.3-76.8-76.6-76.8zM614 486.4c42.4 0 76.8-34.4 76.7-76.8V204.8c0-42.4-34.3-76.8-76.7-76.8-42.4 0-76.7 34.4-76.7 76.8v204.8c0 42.5 34.3 76.8 76.7 76.8zm281.4-76.8c0-42.4-34.4-76.8-76.7-76.8S742 367.2 742 409.6v76.8h76.7c42.3 0 76.7-34.4 76.7-76.8zm-76.8 128H614c-42.4 0-76.7 34.4-76.7 76.8 0 20.3 8.1 39.9 22.4 54.3 14.4 14.4 33.9 22.5 54.3 22.5h204.6c42.4 0 76.7-34.4 76.7-76.8.1-42.4-34.3-76.7-76.7-76.8zM614 742.4h-76.7v76.8c0 42.4 34.4 76.8 76.7 76.8 42.4 0 76.8-34.4 76.7-76.8.1-42.4-34.3-76.7-76.7-76.8zM409.4 537.6c-42.4 0-76.7 34.4-76.7 76.8v204.8c0 42.4 34.4 76.8 76.7 76.8 42.4 0 76.8-34.4 76.7-76.8V614.4c0-20.3-8.1-39.9-22.4-54.3-14.4-14.4-34-22.5-54.3-22.5zM128 614.4c0 20.3 8.1 39.9 22.4 54.3 14.4 14.4 33.9 22.5 54.3 22.5 42.4 0 76.8-34.4 76.7-76.8v-76.8h-76.7c-42.3 0-76.7 34.4-76.7 76.8z"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="links-icon">
+    <div class="links-country">Netherlands //</div>
+    <div class="icon-link">
+      <a href="https://nl.linkedin.com/company/owasp-netherlands" target="_blank" ><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+      <path d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 1 0-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"></path>
+      </svg></a>
+    </div>
+    <div class="icon-link">
+      <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+      <path d="M409.4 128c-42.4 0-76.7 34.4-76.7 76.8 0 20.3 8.1 39.9 22.4 54.3 14.4 14.4 33.9 22.5 54.3 22.5h76.7v-76.8c0-42.3-34.3-76.7-76.7-76.8zm0 204.8H204.7c-42.4 0-76.7 34.4-76.7 76.8s34.4 76.8 76.7 76.8h204.6c42.4 0 76.7-34.4 76.7-76.8.1-42.4-34.3-76.8-76.6-76.8zM614 486.4c42.4 0 76.8-34.4 76.7-76.8V204.8c0-42.4-34.3-76.8-76.7-76.8-42.4 0-76.7 34.4-76.7 76.8v204.8c0 42.5 34.3 76.8 76.7 76.8zm281.4-76.8c0-42.4-34.4-76.8-76.7-76.8S742 367.2 742 409.6v76.8h76.7c42.3 0 76.7-34.4 76.7-76.8zm-76.8 128H614c-42.4 0-76.7 34.4-76.7 76.8 0 20.3 8.1 39.9 22.4 54.3 14.4 14.4 33.9 22.5 54.3 22.5h204.6c42.4 0 76.7-34.4 76.7-76.8.1-42.4-34.3-76.7-76.7-76.8zM614 742.4h-76.7v76.8c0 42.4 34.4 76.8 76.7 76.8 42.4 0 76.8-34.4 76.7-76.8.1-42.4-34.3-76.7-76.7-76.8zM409.4 537.6c-42.4 0-76.7 34.4-76.7 76.8v204.8c0 42.4 34.4 76.8 76.7 76.8 42.4 0 76.8-34.4 76.7-76.8V614.4c0-20.3-8.1-39.9-22.4-54.3-14.4-14.4-34-22.5-54.3-22.5zM128 614.4c0 20.3 8.1 39.9 22.4 54.3 14.4 14.4 33.9 22.5 54.3 22.5 42.4 0 76.8-34.4 76.7-76.8v-76.8h-76.7c-42.3 0-76.7 34.4-76.7 76.8z"></path></svg>
     </div>
   </div>
 </div>

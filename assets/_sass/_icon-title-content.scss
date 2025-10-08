@@ -38,14 +38,27 @@
 }
 
 .icon-title-content .content h1,h2,h3,h4,h5 {
-    // font-family: 'Titillium Web', sans-serif;
-	// line-height: .9em;
+    font-family:Bebas Neue;
 }
 
 .icon-title-content .content h1{
     font-size: 80px;
     text-align: center;
     margin-bottom:20px
+}
+
+.icon-title-content .content h2{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom:20px
+}
+
+.icon-title-content .content li{
+    font-family: inter;
+    list-style-type: disc;
+    font-size: 18px;
+    text-align: left;
+    color:$darkgray
 }
 
 @media screen and (max-width: 700px) {

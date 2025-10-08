@@ -47,7 +47,11 @@
     width:fit-content
 }
 
-
+strong {
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-style: italic;
+}
 
 .head-sub-button {
     padding: 80px 60px;
@@ -64,6 +68,24 @@
     color: #3b4858;
     width: 90%;
     font-family: inter;
+    margin: 10px auto 40px;
+    font-weight:400
+}
+
+.head-sub-button .date {
+    font-size: 35px;
+    color: #3b4858;
+    width: 90%;
+    font-family: Bebas Neue;
+    margin: 10px auto 40px;
+    font-weight:400
+}
+
+.head-sub-button .location {
+    font-size: 35px;
+    color: #3b4858;
+    width: 90%;
+    font-family: Bebas Neue;
     margin: 10px auto 40px;
     font-weight:400
 }
@@ -491,7 +513,8 @@ li {
         position: absolute;
         background-color: #fff;
         top: calc(-100vh - 40px);
-        transition-duration:.5s
+        transition-duration:.5s;
+        // display: none;
     }
 
     .nav-bar-open .left-icon {

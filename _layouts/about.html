@@ -8,9 +8,11 @@
                 <div class="heading">{{ page.title }}</div>
             </div>
         </div>
-        <div class="icon-title-content">
-            <div class="content">{{ content }}</div>
-        </div>
+        {% include about_intro.html %}
+        {% include about_member.html %}
+        {% include about_quick_code_conduct.html %}
+        {% include about_long_code_conduct.html %}
+        {% include home_previous_conferences.html %}
     </div>
 
     {% include footer.html %}

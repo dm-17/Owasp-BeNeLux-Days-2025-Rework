@@ -7,10 +7,10 @@
                 {% for entry in site.data.sponsor_faq | sort: 'weight' %}
                     <div class="faq-section">
                         <div class="faq-single">
-                            <div class="l-icon">+</div>{{ entry.question }}<div class="r-icon" onclick="toggle_faq({{ id }})">+</div>
+                            <div class="l-icon">+</div>{{ entry.question }}<div class="r-icon" onclick="toggle_sponsor_faq({{ id }})">+</div>
                         </div>
                     </div>
-                    <div class="faq-ans" id="faq-ans{{ id }}">{{ entry.answer }}</div>
+                    <div class="faq-ans" id="faq-ans{{ id }}" style="display: none;">{{ entry.answer }}</div>
                     {% assign id = id | plus: 1  %}
                     {% if id == 10 %}
                         {% break %}
