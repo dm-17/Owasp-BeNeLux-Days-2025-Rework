@@ -90,6 +90,18 @@ strong {
     font-weight:400
 }
 
+.head-sub-button .block {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+    background: linear-gradient(0deg, #3B4858, black);
+
+    color: #3b4858;
+    width: 90%;
+    margin: 10px auto 40px;
+    font-weight:400
+}
+
 .counter {
     display: flex;
     justify-content: space-evenly;
@@ -177,7 +189,7 @@ strong {
 
 .pre-events .events .event .image {
     height: 150px;
-    background-image: url(/assets/demo_th_event-67eb770f.jpg);
+    // background-image: url(/assets/demo_th_event-67eb770f.jpg);
     background-size: cover;
     margin-bottom:20px
 }
@@ -233,7 +245,7 @@ li {
 
 .bg-text {
     margin: 0 60px;
-    background-image: url(/assets/bg-456881af.jpg);
+    background-image: url(/assets/images/bg.jpg);
     background-color: #434141;
     background-blend-mode: darken;
     background-size: cover;

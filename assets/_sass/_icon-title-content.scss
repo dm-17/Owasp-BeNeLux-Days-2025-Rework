@@ -15,7 +15,7 @@
     margin: auto auto 60px;
     width: 200px;
     height: 70px;
-    background-image: url(/assets/icons/icon_long-c3d3d3d6.svg);
+    background-image: url(/assets/icons/icon_long.svg);
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat
@@ -64,6 +64,18 @@
 @media screen and (max-width: 700px) {
     .icon-title-content {
         padding:60px 20px
+    }
+
+    .icon-title-content .title {
+        font-size: 50px;
+    }
+
+    .icon-title-content .content h1{
+        font-size: 50px;
+    }
+
+    .icon-title-content .content h1{
+        font-size: 40px;
     }
 
 }
